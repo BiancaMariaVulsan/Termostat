@@ -1,0 +1,15 @@
+0.7
+2020.1
+May 27 2020
+20:09:33
+D:/UTCN/Termostat/Termostat/Termostat.srcs/sources_1/new/BcdToBinary.vhd,1620331572,vhdl,,,,bcdtobinary,,,,,,,,
+D:/UTCN/Termostat/Termostat/Termostat.srcs/sources_1/new/BinaryToBCD.vhd,1620331912,vhdl,,,,binarytobcd,,,,,,,,
+D:/UTCN/Termostat/Termostat/Termostat.srcs/sources_1/new/Comparator.vhd,1620333173,vhdl,,,,comparator,,,,,,,,
+D:/UTCN/Termostat/Termostat/Termostat.srcs/sources_1/new/Debouncer.vhd,1620329861,vhdl,,,,debouncer,,,,,,,,
+D:/UTCN/Termostat/Termostat/Termostat.srcs/sources_1/new/SSD.vhd,1620383627,vhdl,,,,ssd,,,,,,,,
+D:/UTCN/Termostat/Termostat/Termostat.srcs/sources_1/new/StateModule.vhd,1620404739,vhdl,,,,statemodule,,,,,,,,
+D:/UTCN/Termostat/Termostat/Termostat.srcs/sources_1/new/TempRegister.vhd,1620381226,vhdl,,,,tempregister,,,,,,,,
+D:/UTCN/Termostat/Termostat/Termostat.srcs/sources_1/new/Termostat.vhd,1620404451,vhdl,,,,termostat,,,,,,,,
+D:/UTCN/Termostat/Termostat/Termostat.srcs/sources_1/new/TimeUnit.vhd,1620403873,vhdl,,,,timeunit,,,,,,,,
+D:/UTCN/Termostat/Termostat/Termostat.srcs/sources_1/new/UC.vhd,1620404427,vhdl,,,,uc,,,,,,,,
+D:/UTCN/Termostat/Termostat/Termostat.srcs/sources_1/new/UE.vhd,1620334478,vhdl,,,,ue,,,,,,,,

@@ -1,0 +1,26 @@
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 78a4473863f74dbe8f384794590d69b1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Termostat_behav xil_defaultlib.Termostat -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture tempregister_arch of entity xil_defaultlib.TempRegister [tempregister_default]
+Compiling architecture statemodule_arch of entity xil_defaultlib.StateModule [statemodule_default]
+Compiling architecture comparator_arch of entity xil_defaultlib.Comparator [comparator_default]
+Compiling architecture bcdtobinary_arch of entity xil_defaultlib.BcdToBinary [bcdtobinary_default]
+Compiling architecture debouncer_arch of entity xil_defaultlib.Debouncer [debouncer_default]
+Compiling architecture uc_arch of entity xil_defaultlib.UC [uc_default]
+Compiling architecture timeunit_arch of entity xil_defaultlib.TimeUnit [timeunit_default]
+Compiling architecture binarytobcd_arch of entity xil_defaultlib.BinaryToBCD [binarytobcd_default]
+Compiling architecture ssd_arch of entity xil_defaultlib.SSD [ssd_default]
+Compiling architecture ue_arch of entity xil_defaultlib.UE [ue_default]
+Compiling architecture termostat_arch of entity xil_defaultlib.termostat
+Built simulation snapshot Termostat_behav

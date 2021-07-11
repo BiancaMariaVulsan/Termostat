@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu May 20 16:14:40 2021
+# Process ID: 5192
+# Current directory: D:/FACULTATE/ANUL 1/Termostat - FINAL/Termostat/Termostat.runs/impl_1
+# Command line: vivado.exe -log Termostat.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Termostat.tcl -notrace
+# Log file: D:/FACULTATE/ANUL 1/Termostat - FINAL/Termostat/Termostat.runs/impl_1/Termostat.vdi
+# Journal file: D:/FACULTATE/ANUL 1/Termostat - FINAL/Termostat/Termostat.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Termostat.tcl -notrace

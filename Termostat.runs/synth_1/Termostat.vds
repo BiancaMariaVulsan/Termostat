@@ -1,0 +1,282 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun May  9 23:18:55 2021
+# Process ID: 1788
+# Current directory: D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.runs/synth_1
+# Command line: vivado.exe -log Termostat.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Termostat.tcl
+# Log file: D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.runs/synth_1/Termostat.vds
+# Journal file: D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Termostat.tcl -notrace
+Command: synth_design -top Termostat -part xc7a35ticpg236-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Device 21-403] Loading part xc7a35ticpg236-1L
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1372
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1020.375 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Termostat' [D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/Termostat.vhd:16]
+INFO: [Synth 8-3491] module 'UC' declared at 'D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/UC.vhd:6' bound to instance 'UcComponent' of component 'UC' [D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/Termostat.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'UC' [D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/UC.vhd:16]
+INFO: [Synth 8-3491] module 'TempRegister' declared at 'D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/TempRegister.vhd:6' bound to instance 'MinTempReg' of component 'TempRegister' [D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/UC.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'TempRegister' [D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/TempRegister.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'TempRegister' (1#1) [D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/TempRegister.vhd:14]
+INFO: [Synth 8-3491] module 'TempRegister' declared at 'D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/TempRegister.vhd:6' bound to instance 'MaxTempReg' of component 'TempRegister' [D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/UC.vhd:73]
+INFO: [Synth 8-3491] module 'TempRegister' declared at 'D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/TempRegister.vhd:6' bound to instance 'CrtTempReg' of component 'TempRegister' [D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/UC.vhd:83]
+INFO: [Synth 8-3491] module 'StateModule' declared at 'D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/StateModule.vhd:6' bound to instance 'StateModuleComp' of component 'StateModule' [D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/UC.vhd:93]
+INFO: [Synth 8-638] synthesizing module 'StateModule' [D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/StateModule.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'StateModule' (2#1) [D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/StateModule.vhd:13]
+INFO: [Synth 8-3491] module 'Comparator' declared at 'D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/Comparator.vhd:6' bound to instance 'ComparatorComp' of component 'Comparator' [D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/UC.vhd:101]
+INFO: [Synth 8-638] synthesizing module 'Comparator' [D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/Comparator.vhd:14]
+WARNING: [Synth 8-614] signal 'Tcrt' is read in the process but is not in the sensitivity list [D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/Comparator.vhd:18]
+WARNING: [Synth 8-614] signal 'Tmin' is read in the process but is not in the sensitivity list [D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/Comparator.vhd:18]
+WARNING: [Synth 8-614] signal 'Tmax' is read in the process but is not in the sensitivity list [D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/Comparator.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'Comparator' (3#1) [D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/Comparator.vhd:14]
+INFO: [Synth 8-3491] module 'BcdToBinary' declared at 'D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/BcdToBinary.vhd:6' bound to instance 'BcdToBinaryConvertor' of component 'BcdToBinary' [D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/UC.vhd:111]
+INFO: [Synth 8-638] synthesizing module 'BcdToBinary' [D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/BcdToBinary.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'BcdToBinary' (4#1) [D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/BcdToBinary.vhd:13]
+INFO: [Synth 8-3491] module 'Debouncer' declared at 'D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/Debouncer.vhd:6' bound to instance 'StartDeb' of component 'Debouncer' [D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/UC.vhd:117]
+INFO: [Synth 8-638] synthesizing module 'Debouncer' [D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/Debouncer.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'Debouncer' (5#1) [D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/Debouncer.vhd:12]
+INFO: [Synth 8-3491] module 'Debouncer' declared at 'D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/Debouncer.vhd:6' bound to instance 'ConfirmDeb' of component 'Debouncer' [D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/UC.vhd:124]
+INFO: [Synth 8-3491] module 'Debouncer' declared at 'D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/Debouncer.vhd:6' bound to instance 'IncDeb' of component 'Debouncer' [D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/UC.vhd:131]
+INFO: [Synth 8-3491] module 'Debouncer' declared at 'D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/Debouncer.vhd:6' bound to instance 'DecDeb' of component 'Debouncer' [D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/UC.vhd:138]
+WARNING: [Synth 8-614] signal 'binaryTemp' is read in the process but is not in the sensitivity list [D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/UC.vhd:147]
+WARNING: [Synth 8-614] signal 'TcrtOut' is read in the process but is not in the sensitivity list [D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/UC.vhd:147]
+WARNING: [Synth 8-614] signal 'incTempComp' is read in the process but is not in the sensitivity list [D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/UC.vhd:147]
+WARNING: [Synth 8-614] signal 'decTempComp' is read in the process but is not in the sensitivity list [D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/UC.vhd:147]
+INFO: [Synth 8-256] done synthesizing module 'UC' (6#1) [D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/UC.vhd:16]
+INFO: [Synth 8-3491] module 'UE' declared at 'D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/UE.vhd:6' bound to instance 'UeComponent' of component 'UE' [D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/Termostat.vhd:56]
+INFO: [Synth 8-638] synthesizing module 'UE' [D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/UE.vhd:16]
+INFO: [Synth 8-3491] module 'TimeUnit' declared at 'D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/TimeUnit.vhd:6' bound to instance 'TimeUnitComp' of component 'TimeUnit' [D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/UE.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'TimeUnit' [D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/TimeUnit.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'TimeUnit' (7#1) [D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/TimeUnit.vhd:14]
+INFO: [Synth 8-3491] module 'BinaryToBCD' declared at 'D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/BinaryToBCD.vhd:6' bound to instance 'BinaryToBCDComp' of component 'BinaryToBCD' [D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/UE.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'BinaryToBCD' [D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/BinaryToBCD.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'BinaryToBCD' (8#1) [D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/BinaryToBCD.vhd:11]
+INFO: [Synth 8-3491] module 'SSD' declared at 'D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/SSD.vhd:6' bound to instance 'SsdComponent' of component 'SSD' [D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/UE.vhd:70]
+INFO: [Synth 8-638] synthesizing module 'SSD' [D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/SSD.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'SSD' (9#1) [D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/SSD.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'UE' (10#1) [D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/UE.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'Termostat' (11#1) [D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/Termostat.vhd:16]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1020.375 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1020.375 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1020.375 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1020.375 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/constrs_1/new/basys3.xdc]
+Finished Parsing XDC File [D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/constrs_1/new/basys3.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/constrs_1/new/basys3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Termostat_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Termostat_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1038.461 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1038.461 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1038.461 ; gain = 18.086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35ticpg236-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1038.461 ; gain = 18.086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1038.461 ; gain = 18.086
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'Tcrt_reg' [D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/UC.vhd:161]
+WARNING: [Synth 8-327] inferring latch for variable 'Leds_reg' [D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/UC.vhd:150]
+WARNING: [Synth 8-327] inferring latch for variable 'TcrtIn_reg' [D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/UC.vhd:85]
+WARNING: [Synth 8-327] inferring latch for variable 'incTempReg_reg' [D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/UC.vhd:86]
+WARNING: [Synth 8-327] inferring latch for variable 'decTempReg_reg' [D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/UC.vhd:87]
+WARNING: [Synth 8-327] inferring latch for variable 'TminIn_reg' [D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/UC.vhd:65]
+WARNING: [Synth 8-327] inferring latch for variable 'TmaxIn_reg' [D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.srcs/sources_1/new/UC.vhd:75]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1038.461 ; gain = 18.086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   31 Bit       Adders := 2     
+	   2 Input    6 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 2     
+	   2 Input    3 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 1     
++---Registers : 
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   2 Input   31 Bit        Muxes := 2     
+	   2 Input   16 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 1     
+	   4 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 4     
+	   4 Input    4 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 7     
+	   4 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1038.461 ; gain = 18.086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1038.461 ; gain = 18.086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1038.461 ; gain = 18.086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1068.859 ; gain = 48.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1083.703 ; gain = 63.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1083.703 ; gain = 63.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1083.703 ; gain = 63.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1083.703 ; gain = 63.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1083.703 ; gain = 63.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1083.703 ; gain = 63.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |   138|
+|3     |LUT1   |    18|
+|4     |LUT2   |   143|
+|5     |LUT3   |   224|
+|6     |LUT4   |   150|
+|7     |LUT5   |   106|
+|8     |LUT6   |   231|
+|9     |FDRE   |   160|
+|10    |LD     |    52|
+|11    |IBUF   |    17|
+|12    |OBUF   |    16|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1083.703 ; gain = 63.328
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:31 . Memory (MB): peak = 1083.703 ; gain = 45.242
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1083.703 ; gain = 63.328
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1095.746 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 190 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1095.746 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 52 instances were transformed.
+  LD => LDCE: 52 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+52 Infos, 14 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1095.746 ; gain = 75.371
+INFO: [Common 17-1381] The checkpoint 'D:/FACULTATE/ANUL 1/Termostat - aproape bun - Copy/Termostat/Termostat.runs/synth_1/Termostat.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Termostat_utilization_synth.rpt -pb Termostat_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun May  9 23:19:39 2021...

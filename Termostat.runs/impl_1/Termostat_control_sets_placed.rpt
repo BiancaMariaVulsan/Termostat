@@ -1,0 +1,93 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Sun May  9 23:20:19 2021
+| Host         : DESKTOP-HJK27TM running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Termostat_control_sets_placed.rpt
+| Design       : Termostat
+| Device       : xc7a35ti
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    15 |
+|    Minimum number of control sets                        |    15 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    52 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    15 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     4 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     3 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     1 |
+| >= 16              |     4 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              95 |           30 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              32 |            8 |
+| Yes          | No                    | No                     |              41 |           14 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              44 |           12 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------------------------------+----------------------------------------------------------+-------------------------------------+------------------+----------------+--------------+
+|                  Clock Signal                  |                       Enable Signal                      |           Set/Reset Signal          | Slice Load Count | Bel Load Count | Bels / Slice |
++------------------------------------------------+----------------------------------------------------------+-------------------------------------+------------------+----------------+--------------+
+|  CLK_IBUF_BUFG                                 | UeComponent/TimeUnitComp/dividedClock                    |                                     |                1 |              1 |         1.00 |
+|  CLK_IBUF_BUFG                                 | UcComponent/StartDeb/eqOp                                |                                     |                3 |              4 |         1.33 |
+|  UcComponent/StateModuleComp/E[0]              |                                                          |                                     |                2 |              5 |         2.50 |
+|  CLK_IBUF_BUFG                                 | UeComponent/TimeUnitComp/dividedClock                    | UeComponent/TimeUnitComp/crtSeconds |                2 |              5 |         2.50 |
+|  CLK_IBUF_BUFG                                 | UeComponent/TimeUnitComp/crtMinutes                      | UeComponent/TimeUnitComp/crtHours   |                2 |              5 |         2.50 |
+|  CLK_IBUF_BUFG                                 | UeComponent/TimeUnitComp/crtSeconds                      | UeComponent/TimeUnitComp/crtMinutes |                1 |              6 |         6.00 |
+|  UcComponent/StateModuleComp/D[0]              |                                                          |                                     |                3 |             11 |         3.67 |
+|  UcComponent/StateModuleComp/state_reg[2]_0[0] |                                                          |                                     |                3 |             11 |         3.67 |
+|  UcComponent/StateModuleComp/state_reg[1]_1[0] |                                                          |                                     |                5 |             11 |         2.20 |
+|  CLK_IBUF_BUFG                                 | UcComponent/CrtTempReg/storeTemp.InternalTemp[0]_i_1_n_0 |                                     |                4 |             12 |         3.00 |
+|  UcComponent/StateModuleComp/state_reg[1]_0[0] |                                                          |                                     |                4 |             14 |         3.50 |
+|  CLK_IBUF_BUFG                                 | Confirm_IBUF                                             |                                     |                6 |             24 |         4.00 |
+|  CLK_IBUF_BUFG                                 | UeComponent/TimeUnitComp/started_reg_0                   | UeComponent/TimeUnitComp/clocks     |                7 |             28 |         4.00 |
+|  CLK_IBUF_BUFG                                 |                                                          | UcComponent/ComparatorComp/clear    |                8 |             32 |         4.00 |
+|  CLK_IBUF_BUFG                                 |                                                          |                                     |               13 |             43 |         3.31 |
++------------------------------------------------+----------------------------------------------------------+-------------------------------------+------------------+----------------+--------------+
+
+

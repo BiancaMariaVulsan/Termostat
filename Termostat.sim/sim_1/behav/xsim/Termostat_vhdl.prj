@@ -1,0 +1,16 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Termostat.srcs/sources_1/new/BcdToBinary.vhd" \
+"../../../../Termostat.srcs/sources_1/new/BinaryToBCD.vhd" \
+"../../../../Termostat.srcs/sources_1/new/Comparator.vhd" \
+"../../../../Termostat.srcs/sources_1/new/Debouncer.vhd" \
+"../../../../Termostat.srcs/sources_1/new/SSD.vhd" \
+"../../../../Termostat.srcs/sources_1/new/StateModule.vhd" \
+"../../../../Termostat.srcs/sources_1/new/TempRegister.vhd" \
+"../../../../Termostat.srcs/sources_1/new/TimeUnit.vhd" \
+"../../../../Termostat.srcs/sources_1/new/UC.vhd" \
+"../../../../Termostat.srcs/sources_1/new/UE.vhd" \
+"../../../../Termostat.srcs/sources_1/new/Termostat.vhd" \
+
+# Do not sort compile order
+nosort
